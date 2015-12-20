@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Name"
+        android:ems="10"
+        android:id="@+id/nameValueTextView"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:layout_marginTop="35dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/closeButton"
+        android:layout_alignStart="@+id/closeButton"
+        android:layout_marginLeft="50dp"
+        android:layout_marginStart="50dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:text="Surname"
+        android:ems="10"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/surnameValueTextView"
+        android:layout_below="@+id/nameValueTextView"
+        android:layout_alignLeft="@+id/nameValueTextView"
+        android:layout_alignStart="@+id/nameValueTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/sexeValueTextView"
+        android:text="Sexe"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+
+        android:layout_below="@+id/surnameValueTextView"
+        android:layout_alignLeft="@+id/surnameValueTextView"
+        android:layout_alignStart="@+id/surnameValueTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/name"
+        android:id="@+id/nameTextView"
+        android:gravity="center_vertical"
+        android:layout_above="@+id/surnameValueTextView"
+        android:layout_alignLeft="@+id/surnameTextView"
+        android:layout_alignStart="@+id/surnameTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/surname"
+        android:id="@+id/surnameTextView"
+        android:gravity="center_vertical"
+        android:layout_alignBottom="@+id/surnameValueTextView"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="32dp"
+        android:layout_marginStart="32dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:id="@+id/sexeTextView"
+        android:layout_alignTop="@+id/sexeValueTextView"
+        android:layout_alignLeft="@+id/surnameTextView"
+        android:layout_alignStart="@+id/surnameTextView"
+        android:layout_alignBottom="@+id/sexeValueTextView"
+        android:gravity="center_vertical"
+        android:text="@string/sex" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="@string/age"
+        android:id="@+id/AgeTextView"
+        android:layout_alignLeft="@+id/sexeTextView"
+        android:layout_alignStart="@+id/sexeTextView"
+        android:gravity="center_vertical"
+        android:layout_below="@+id/sexeValueTextView" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="10 ans"
+        android:id="@+id/ageValueTextView"
+        android:layout_alignTop="@+id/AgeTextView"
+        android:layout_alignLeft="@+id/sexeValueTextView"
+        android:layout_alignStart="@+id/sexeValueTextView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/close"
+        android:id="@+id/closeButton"
+        android:layout_marginTop="31dp"
+        android:layout_below="@+id/ageValueTextView"
+        android:layout_centerHorizontal="true" />
+
+
+</RelativeLayout>

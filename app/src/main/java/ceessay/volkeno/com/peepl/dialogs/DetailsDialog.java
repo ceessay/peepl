@@ -31,7 +31,7 @@ public class DetailsDialog extends Dialog{
 
         String sex = p.getSex().equals("M")
                 ? context.getResources().getString(R.string.male)
-                : context.getResources().getString(R.string.male);
+                : context.getResources().getString(R.string.female);
 
         nameValueTextView.setText(p.getName());
         surnameValueTextView.setText(p.getSurname());
